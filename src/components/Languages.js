@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import PropTypes from "prop-types";
 
 const Languages = ({ languages }) => {
@@ -14,4 +14,4 @@ Languages.propTypes = {
 	languages : PropTypes.array.isRequired,
 };
 
-export default Languages;
+export default memo(Languages);
